@@ -25,19 +25,7 @@ app.use('/api', routes);
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
-/*import express from 'express';
 
-// Create Express app
-const app = express();
-const port = 3000; // Change this to the desired port number
 
-// Define a route for getting the "pong" message
-app.get('/ping', (req, res) => {
-    res.send('pong');
-});
 
-// Start the server
-app.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
-});*/
 
