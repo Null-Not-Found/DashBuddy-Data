@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed87beb5-dbc9-4ee7-a5d0-14c773113bd4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Routes/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+    <list default="true" id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/brand.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/brand.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/database.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/schemas/brand.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.controller.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +32,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2NuPByzjdRoOK48nhCespwVJeV4" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2OroK42dqxKtXwoHB5XSMM42g1H" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,41 +45,52 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pro10/Desktop/DashBuddy-Data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\pro10\\Desktop\\DashBuddy-Data\\node_modules\\typescript\\lib&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\pro10\\Desktop\\typescript-starter\\node_modules\\prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\pro10\\Desktop\\typescript-starter\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed87beb5-dbc9-4ee7-a5d0-14c773113bd4" name="Changes" comment="" />
-      <created>1680510865013</created>
+      <changelist id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="" />
+      <created>1682327994505</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680510865013</updated>
-      <workItem from="1680510866038" duration="2073000" />
-      <workItem from="1680514278714" duration="285000" />
-      <workItem from="1680514576300" duration="432000" />
-      <workItem from="1680515022071" duration="1043000" />
-      <workItem from="1680597260225" duration="881000" />
-      <workItem from="1680598164698" duration="936000" />
-      <workItem from="1680599125173" duration="4077000" />
-      <workItem from="1680604440883" duration="1419000" />
-      <workItem from="1680606102383" duration="341000" />
-      <workItem from="1681201349329" duration="3818000" />
-      <workItem from="1681206154784" duration="2106000" />
-      <workItem from="1681211681046" duration="8000" />
-      <workItem from="1681211791209" duration="124000" />
-      <workItem from="1681211939694" duration="14000" />
+      <updated>1682327994505</updated>
+      <workItem from="1682327995547" duration="96000" />
+      <workItem from="1682328103812" duration="641000" />
+      <workItem from="1682328762077" duration="671000" />
+      <workItem from="1682413042780" duration="647000" />
+      <workItem from="1682422152655" duration="58000" />
+      <workItem from="1682452473208" duration="14000" />
+      <workItem from="1683038456645" duration="23000" />
+      <workItem from="1683038497262" duration="28000" />
+      <workItem from="1683622201330" duration="292000" />
+      <workItem from="1683622505385" duration="2585000" />
+      <workItem from="1683625189367" duration="705000" />
+      <workItem from="1683628299566" duration="796000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
