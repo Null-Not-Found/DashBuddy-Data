@@ -10,31 +10,31 @@ import {
 import { Brand } from './schemas/brand.schema';
 import { BrandService } from './brand.service';
 
-@Controller('api')
+@Controller('brands')
 export class BrandsController {
   constructor(private readonly brandService: BrandService) {}
 
-  @Post('brands')
+  @Post('post')
   async create(@Body() brand: Brand): Promise<Brand> {
     return this.brandService.create(brand);
   }
 
-  @Get('brands')
+  @Get('get')
   async findAll(): Promise<Brand[]> {
     return this.brandService.findAll();
   }
 
-  @Get('brands/:id')
+  @Get('get/:id')
   async findOne(@Param('id') id: string): Promise<Brand> {
     return this.brandService.findOne(id);
   }
 
-  @Put('brands/:id')
+  @Put('put/:id')
   async update(@Param('id') id: string, @Body() brand: Brand): Promise<Brand> {
     return this.brandService.update(id, brand);
   }
 
-  @Delete('brands/:id')
+  @Delete('delete/:id')
   async delete(@Param('id') id: string): Promise<Brand> {
     return this.brandService.delete(id);
   }
