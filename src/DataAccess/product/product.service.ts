@@ -10,11 +10,30 @@ export class ProductService {
   constructor(@InjectModel('Product') private productModel: Model<Product>) {}
 
   async createProduct(productInput: ProductInput): Promise<Product> {
-    const { name, description } = productInput;
+    const {
+      name,
+      brand,
+      model,
+      owner_id,
+      fields,
+      gtin,
+      product_statuses_id,
+      created_at,
+      deleted_at,
+      updated_at,
+    } = productInput;
     const product = {
       id: uuid(),
       name: name,
-      description: description,
+      brand: brand,
+      model: model,
+      owner_id: owner_id,
+      fields: fields,
+      gtin: gtin,
+      product_statuses_id: product_statuses_id,
+      created_at: created_at,
+      deleted_at: deleted_at,
+      updated_at: updated_at,
     };
     const createdProduct = new this.productModel(product);
     return createdProduct.save();
@@ -32,11 +51,30 @@ export class ProductService {
     id: string,
     productInput: ProductInput,
   ): Promise<Product> {
-    const { name, description } = productInput;
+    const {
+      name,
+      brand,
+      model,
+      owner_id,
+      fields,
+      gtin,
+      product_statuses_id,
+      created_at,
+      deleted_at,
+      updated_at,
+    } = productInput;
     const product = {
-      id: id,
+      id: uuid(),
       name: name,
-      description: description,
+      brand: brand,
+      model: model,
+      owner_id: owner_id,
+      fields: fields,
+      gtin: gtin,
+      product_statuses_id: product_statuses_id,
+      created_at: created_at,
+      deleted_at: deleted_at,
+      updated_at: updated_at,
     };
     return this.productModel
       .findOneAndUpdate({ id }, product, { new: true })

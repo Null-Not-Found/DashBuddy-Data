@@ -21,11 +21,23 @@ export class BrandService {
   }
 
   async createBrand(brandInput: BrandInput): Promise<Brand> {
-    const { name, description, products } = brandInput;
+    const {
+      name,
+      description,
+      owner_id,
+      created_at,
+      updated_at,
+      deleted_at,
+      products,
+    } = brandInput;
     const brand = {
       id: uuid(),
       name: name,
       description: description,
+      owner_id: owner_id,
+      created_at: created_at,
+      updated_at: updated_at,
+      deleted_at: deleted_at,
       products: products,
     };
     const createdBrand = new this.brandModel(brand);
