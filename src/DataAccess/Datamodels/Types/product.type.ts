@@ -13,8 +13,8 @@ export class ProductType {
   model: string;
   @Field()
   owner_id: string;
-  @Field()
-  fields: [Product_fieldType];
+  @Field(() => [Product_fieldType])
+  fields: Product_fieldType[];
   @Field()
   gtin: string;
   @Field()

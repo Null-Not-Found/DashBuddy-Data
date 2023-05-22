@@ -1,4 +1,5 @@
 import { Schema, Document } from 'mongoose';
+import any = jasmine.any;
 
 export interface ProductField extends Document {
   id: string;
@@ -13,7 +14,7 @@ export const ProductFieldSchema = new Schema<ProductField>(
   {
     id: { type: String, required: true },
     attribute: { type: String, required: true },
-    value: { required: true },
+    value: {},
     created_at: { type: Date, required: true },
     deleted_at: { type: Date, required: true },
     updated_at: { type: Date, required: true },

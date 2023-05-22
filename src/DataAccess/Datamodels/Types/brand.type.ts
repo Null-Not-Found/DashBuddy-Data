@@ -1,6 +1,10 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 import { ProductType } from '../Types/product.type';
+/*import { EntityObjectType } from 'nestjs-graphql-resolver';
 
+@EntityObjectType({
+  name: 'Brand',
+})*/
 @ObjectType('Brand')
 export class BrandType {
   @Field((type) => ID)
