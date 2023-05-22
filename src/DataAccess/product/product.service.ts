@@ -1,43 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Product } from './product.schema';
-import { v4 as uuid } from 'uuid';
-import { ProductInput } from './product.input';
+import { Product } from '../Datamodels/Schemas/product.schema';
 
 @Injectable()
 export class ProductService {
   constructor(@InjectModel('Product') private productModel: Model<Product>) {}
-
-  async createProduct(productInput: ProductInput): Promise<Product> {
-    const {
-      name,
-      brand,
-      model,
-      owner_id,
-      fields,
-      gtin,
-      product_statuses_id,
-      created_at,
-      deleted_at,
-      updated_at,
-    } = productInput;
-    const product = {
-      id: uuid(),
-      name: name,
-      brand: brand,
-      model: model,
-      owner_id: owner_id,
-      fields: fields,
-      gtin: gtin,
-      product_statuses_id: product_statuses_id,
-      created_at: created_at,
-      deleted_at: deleted_at,
-      updated_at: updated_at,
-    };
-    const createdProduct = new this.productModel(product);
-    return createdProduct.save();
-  }
 
   async getProducts(): Promise<Product[]> {
     return this.productModel.find().exec();
@@ -45,40 +13,6 @@ export class ProductService {
 
   async getProduct(id: string): Promise<Product> {
     return this.productModel.findOne({ id }).exec();
-  }
-
-  async updateProduct(
-    id: string,
-    productInput: ProductInput,
-  ): Promise<Product> {
-    const {
-      name,
-      brand,
-      model,
-      owner_id,
-      fields,
-      gtin,
-      product_statuses_id,
-      created_at,
-      deleted_at,
-      updated_at,
-    } = productInput;
-    const product = {
-      id: uuid(),
-      name: name,
-      brand: brand,
-      model: model,
-      owner_id: owner_id,
-      fields: fields,
-      gtin: gtin,
-      product_statuses_id: product_statuses_id,
-      created_at: created_at,
-      deleted_at: deleted_at,
-      updated_at: updated_at,
-    };
-    return this.productModel
-      .findOneAndUpdate({ id }, product, { new: true })
-      .exec();
   }
 
   async deleteProduct(id: string): Promise<Product> {

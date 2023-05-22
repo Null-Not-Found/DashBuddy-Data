@@ -8,16 +8,11 @@ import {
   Body,
 } from '@nestjs/common';
 import { ProductService } from './product.service';
-import { Product } from './product.schema';
+import { Product } from '../Datamodels/Schemas/product.schema';
 
 @Controller('products')
 export class ProductController {
   constructor(private readonly productService: ProductService) {}
-
-  @Post('post')
-  async create(@Body() product: Product): Promise<Product> {
-    return this.productService.createProduct(product);
-  }
 
   @Get('get')
   async findAll(): Promise<Product[]> {
@@ -27,14 +22,6 @@ export class ProductController {
   @Get('get/:id')
   async findOne(@Param('id') id: string): Promise<Product> {
     return this.productService.getProduct(id);
-  }
-
-  @Put('put/:id')
-  async update(
-    @Param('id') id: string,
-    @Body() product: Product,
-  ): Promise<Product> {
-    return this.productService.updateProduct(id, product);
   }
 
   @Delete('delete/:id')

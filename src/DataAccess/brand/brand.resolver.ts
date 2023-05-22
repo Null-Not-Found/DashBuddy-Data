@@ -7,10 +7,9 @@ import {
   Parent,
 } from '@nestjs/graphql';
 import { BrandService } from './brand.service';
-import { BrandInput } from './brand.input';
-import { BrandType } from './brand.type';
+import { BrandType } from '../Datamodels/Types/brand.type';
 import { AssignProductToBrandInput } from './assignProductToBrand.input';
-import { Brand } from './brand.schema';
+import { Brand } from '../Datamodels/Schemas/brand.schema';
 import { ProductService } from '../product/product.service';
 
 @Resolver((of) => BrandType)
@@ -26,18 +25,6 @@ export class BrandResolver {
   @Query((returns) => [BrandType])
   brands() {
     return this.brandServise.getBrands();
-  }
-
-  @Mutation((returns) => BrandType)
-  createBrand(@Args('brandInput') brandInput: BrandInput) {
-    return this.brandServise.createBrand(brandInput);
-  }
-  @Mutation((returns) => BrandType)
-  updateBrand(
-    @Args('brandInput') brandInput: BrandInput,
-    @Args('id') id: string,
-  ) {
-    return this.brandServise.updateBrand(id, brandInput);
   }
 
   @Mutation((returns) => BrandType)

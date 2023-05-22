@@ -1,5 +1,5 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
-import { ProductField } from './Schemas/product_field.schema';
+import { Product_fieldType } from './product_field.type';
 
 @ObjectType('Product')
 export class ProductType {
@@ -14,7 +14,7 @@ export class ProductType {
   @Field()
   owner_id: string;
   @Field()
-  fields: [ProductField];
+  fields: [Product_fieldType];
   @Field()
   gtin: string;
   @Field()

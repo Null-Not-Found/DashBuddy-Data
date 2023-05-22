@@ -1,9 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { Brand } from './brand.schema';
-import { v4 as uuid } from 'uuid';
-import { BrandInput } from './brand.input';
+import { Brand } from '../Datamodels/Schemas/brand.schema';
 
 @Injectable()
 export class BrandService {
@@ -20,48 +18,12 @@ export class BrandService {
     });
   }
 
-  async createBrand(brandInput: BrandInput): Promise<Brand> {
-    const {
-      name,
-      description,
-      owner_id,
-      created_at,
-      updated_at,
-      deleted_at,
-      products,
-    } = brandInput;
-    const brand = {
-      id: uuid(),
-      name: name,
-      description: description,
-      owner_id: owner_id,
-      created_at: created_at,
-      updated_at: updated_at,
-      deleted_at: deleted_at,
-      products: products,
-    };
-    const createdBrand = new this.brandModel(brand);
-    return createdBrand.save();
-  }
-
   async getBrands(): Promise<Brand[]> {
     return this.brandModel.find().exec();
   }
 
   async getBrand(id: string): Promise<Brand> {
     return this.brandModel.findOne({ id }).exec();
-  }
-
-  async updateBrand(id: string, brandInput: BrandInput): Promise<Brand> {
-    const { name, description } = brandInput;
-    const brand = {
-      id: id,
-      name: name,
-      description: description,
-    };
-    return this.brandModel
-      .findOneAndUpdate({ id }, brand, { new: true })
-      .exec();
   }
 
   async deleteBrand(id: string): Promise<Brand> {

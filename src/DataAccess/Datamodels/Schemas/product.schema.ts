@@ -2,7 +2,7 @@ import { Schema, Document } from 'mongoose';
 import {
   ProductField,
   ProductFieldSchema,
-} from './Schemas/product_field.schema';
+} from './product_field.schema';
 
 export interface Product extends Document {
   id: string;
