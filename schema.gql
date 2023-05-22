@@ -1,0 +1,49 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Product {
+  id: ID!
+  name: String!
+  description: String!
+}
+
+type Brand {
+  id: ID!
+  name: String!
+  description: String!
+  products: [Product!]!
+}
+
+type Query {
+  brand(id: String!): Brand!
+  brands: [Brand!]!
+  product(id: String!): Product!
+  products: [Product!]!
+}
+
+type Mutation {
+  createBrand(brandInput: BrandInput!): Brand!
+  updateBrand(brandInput: BrandInput!, id: String!): Brand!
+  deleteBrand(id: String!): Brand!
+  assingProductToBrand(assingProductToBrandInput: AssignProductToBrandInput!): Brand!
+  createProduct(productInput: ProductInput!): Product!
+  updateProduct(productInput: ProductInput!, id: String!): Product!
+  deleteProduct(id: String!): Product!
+}
+
+input BrandInput {
+  name: String!
+  description: String!
+  products: [ID!]! = []
+}
+
+input AssignProductToBrandInput {
+  brandID: ID!
+  productIDs: [ID!]!
+}
+
+input ProductInput {
+  name: String!
+  description: String!
+}

@@ -1,26 +1,19 @@
 import { Module } from '@nestjs/common';
-//import { AppController } from './app.controller';
-//import { AppService } from './app.service';
-import { BrandsController } from './DataAccess/brand.controller';
-import { BrandService } from './DataAccess/brand.service';
 import { MongooseModule } from '@nestjs/mongoose';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { BrandSchema } from './DataAccess/schemas/brand.schema';
-import { DatabaseModule } from './DataAccess/database.module';
-
-/*@Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
-})
-export class AppModule {}*/
+import { GraphQLModule } from '@nestjs/graphql';
+import { BrandModule } from './DataAccess/brand/brand.module';
+import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
+import { ProductModule } from './DataAccess/product/product.module';
 
 @Module({
   imports: [
-    DatabaseModule,
-    MongooseModule.forFeature([{ name: 'Brand', schema: BrandSchema }]),
+    MongooseModule.forRoot('mongodb://localhost:4001/DashBuddy'),
+    BrandModule,
+    ProductModule,
+    GraphQLModule.forRoot<ApolloDriverConfig>({
+      driver: ApolloDriver,
+      autoSchemaFile: 'schema.gql',
+    }),
   ],
-  controllers: [BrandsController],
-  providers: [BrandService],
 })
 export class AppModule {}
