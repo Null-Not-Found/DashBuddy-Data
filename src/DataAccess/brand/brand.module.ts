@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { BrandResolver } from './brand.resolver';
 import { MongooseModule } from '@nestjs/mongoose';
-import { BrandSchema } from '../Datamodels/Schemas/brand.schema';
+import { BrandSchema } from '../Datamodels/Types/brand.type';
 import { BrandService } from './brand.service';
 import { BrandsController } from './brand.controller';
 import { ProductModule } from '../product/product.module';

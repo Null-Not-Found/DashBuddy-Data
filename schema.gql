@@ -2,9 +2,8 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type ProductField {
+type ProductFieldValue {
   id: ID!
-  attribute: String!
   value: ValueScalar!
   updated_at: DateTime!
   deleted_at: DateTime!
@@ -18,6 +17,15 @@ scalar ValueScalar
 A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
 """
 scalar DateTime
+
+type ProductField {
+  id: ID!
+  attribute: String!
+  value: ProductFieldValue!
+  updated_at: DateTime!
+  deleted_at: DateTime!
+  created_at: DateTime!
+}
 
 type Product {
   id: ID!

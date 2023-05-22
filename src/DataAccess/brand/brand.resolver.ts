@@ -9,7 +9,6 @@ import {
 import { BrandService } from './brand.service';
 import { BrandType } from '../Datamodels/Types/brand.type';
 import { AssignProductToBrandInput } from './assignProductToBrand.input';
-import { Brand } from '../Datamodels/Schemas/brand.schema';
 import { ProductService } from '../product/product.service';
 
 @Resolver((of) => BrandType)
@@ -42,7 +41,7 @@ export class BrandResolver {
   }
 
   @ResolveField()
-  async products(@Parent() brand: Brand) {
+  async products(@Parent() brand: BrandType) {
     return this.productService.getManyProducts(brand.products);
   }
 }

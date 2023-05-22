@@ -6,11 +6,30 @@
   <component name="ChangeListManager">
     <list default="true" id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema.gql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.gql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/product_field.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/product_field.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/attribute.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/brand.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/client.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/product.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/product_field.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/product_model.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Schemas/product_status.schema.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/attribute.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/attribute.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/brand.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/brand.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/client.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/client.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product.type.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_field.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_field.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_model.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_model.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_status.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_status.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/brand/brand.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/brand/brand.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/brand/brand.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/brand/brand.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/product/product.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/product/product.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/product/product.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/product/product.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/product/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/product/product.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +113,7 @@
       <workItem from="1684238343499" duration="252000" />
       <workItem from="1684239594327" duration="1110000" />
       <workItem from="1684404143748" duration="15000" />
-      <workItem from="1684746478655" duration="5326000" />
+      <workItem from="1684746478655" duration="8682000" />
     </task>
     <servers />
   </component>
