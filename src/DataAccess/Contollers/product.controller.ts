@@ -7,8 +7,8 @@ import {
   Param,
   Body,
 } from '@nestjs/common';
-import { ProductService } from './product.service';
-import { ProductDocument as Product } from "../Datamodels/Types/product.type";
+import { ProductService } from '../Services/product.service';
+import { ProductDocument as Product } from "../Datamodels/product.type";
 
 @Controller('products')
 export class ProductController {

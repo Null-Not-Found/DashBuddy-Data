@@ -2,6 +2,7 @@ import { Field, ID, ObjectType } from '@nestjs/graphql';
 import mongoose, { Document, Schema as MongooseSchema } from 'mongoose';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { GraphQLJSON } from 'graphql-type-json';
+import { AttributeType } from './attribute.type';
 
 @Schema()
 @ObjectType('ProductField')
@@ -9,7 +10,7 @@ export class Product_fieldType {
   @Field((type) => ID)
   @Prop()
   id: string;
-  @Field()
+  @Field((type) => AttributeType)
   @Prop()
   attribute: string;
   @Field(() => GraphQLJSON) // Field with type Any

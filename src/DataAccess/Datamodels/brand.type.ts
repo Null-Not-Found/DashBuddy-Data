@@ -1,7 +1,8 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
-import { ProductType } from '../Types/product.type';
+import { ProductType } from './product.type';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
+import { ClientType } from './client.type';
 
 @Schema()
 @ObjectType('Brand')
@@ -18,7 +19,7 @@ export class BrandType {
   @Prop()
   description: string;
 
-  @Field()
+  @Field((type) => ClientType)
   @Prop()
   owner_id: string;
 

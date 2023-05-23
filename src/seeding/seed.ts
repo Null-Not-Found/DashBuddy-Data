@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
-import { Client } from '../DataAccess/Datamodels/Types/client.type';
-import { Brand } from '../DataAccess/Datamodels/Types/brand.type';
-import { Product } from '../DataAccess/Datamodels/Types/product.type';
-import { Attribute } from '../DataAccess/Datamodels/Types/attribute.type';
-import { ProductField } from '../DataAccess/Datamodels/Types/product_field.type';
-import { ProductStatus } from '../DataAccess/Datamodels/Types/product_status.type';
-import { ProductModel } from '../DataAccess/Datamodels/Types/product_model.type';
+import { Client } from '../DataAccess/Datamodels/client.type';
+import { Brand } from '../DataAccess/Datamodels/brand.type';
+import { Product } from '../DataAccess/Datamodels/product.type';
+import { Attribute } from '../DataAccess/Datamodels/attribute.type';
+import { ProductField } from '../DataAccess/Datamodels/product_field.type';
+import { ProductStatus } from '../DataAccess/Datamodels/product_status.type';
+import { ProductModel } from '../DataAccess/Datamodels/product_model.type';
 
 main();
 

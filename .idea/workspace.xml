@@ -5,20 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/seeding/seed.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Modules/attribute.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Modules/client.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Modules/product_model.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Modules/product_status.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Resolvers/product_fields.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Resolvers/product_model.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Services/attribute.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Services/client.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Services/product_model.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataAccess/Services/product_status.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schema.gql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.gql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/attribute.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/attribute.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/brand.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/brand.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/client.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/client.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_field.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_field.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_model.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_model.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_status.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_status.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/attribute.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/attribute.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/brand.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/brand.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/client.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/client.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/product.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_field.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/product_field.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_model.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/product_model.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/Types/product_status.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/product_status.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/assignProductToBrand.input.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/assignProductToBrand.input.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Contollers/brand.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Modules/brand.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Resolvers/brand.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/brand/brand.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/brand.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/product/product.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Contollers/product.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/product/product.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Modules/product.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/product/product.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Resolvers/product.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/product/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/product.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeding/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeding/seed.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="tsconfig.json" />
         <option value="TypeScript File" />
       </list>
     </option>
@@ -36,7 +53,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2OroK42dqxKtXwoHB5XSMM42g1H" />
   <component name="ProjectViewState">
@@ -65,11 +82,11 @@
       <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Inputs" />
-      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Types" />
-      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Schemas" />
-      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\product\Schemas" />
-      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\brand" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Modules" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Services" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Resolvers" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Contollers" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,7 +120,7 @@
       <workItem from="1684239594327" duration="1110000" />
       <workItem from="1684404143748" duration="15000" />
       <workItem from="1684746478655" duration="8700000" />
-      <workItem from="1684838804236" duration="7543000" />
+      <workItem from="1684838804236" duration="17928000" />
     </task>
     <servers />
   </component>

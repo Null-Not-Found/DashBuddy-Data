@@ -2,6 +2,10 @@ import { Field, ID, ObjectType } from '@nestjs/graphql';
 import { Product_fieldSchema, Product_fieldType } from './product_field.type';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
+import { BrandType } from './brand.type';
+import { Product_modelType } from './product_model.type';
+import { ClientType } from './client.type';
+import { Product_statusType } from './product_status.type';
 
 @Schema()
 @ObjectType('Product')
@@ -12,13 +16,13 @@ export class ProductType {
   @Field()
   @Prop()
   name: string;
-  @Field()
+  @Field((type) => BrandType)
   @Prop()
   brand: string;
-  @Field()
+  @Field((type) => Product_modelType)
   @Prop()
   model: string;
-  @Field()
+  @Field((type) => ClientType)
   @Prop()
   owner_id: string;
   @Field(() => [Product_fieldType])
@@ -27,7 +31,7 @@ export class ProductType {
   @Field()
   @Prop()
   gtin: string;
-  @Field()
+  @Field((type) => Product_statusType)
   @Prop()
   product_statuses_id: string;
   @Field({ nullable: true })

@@ -7,8 +7,8 @@ import {
   Param,
   Body,
 } from '@nestjs/common';
-import { BrandType } from '../Datamodels/Types/brand.type';
-import { BrandService } from './brand.service';
+import { BrandType } from '../Datamodels/brand.type';
+import { BrandService } from '../Services/brand.service';
 
 @Controller('brands')
 export class BrandsController {

@@ -2,9 +2,23 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Attribute {
+  id: ID!
+  name: String!
+  required: Boolean!
+  updated_at: DateTime
+  deleted_at: DateTime
+  created_at: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
 type ProductField {
   id: ID!
-  attribute: String!
+  attribute: Attribute!
   value: JSON!
   updated_at: DateTime
   deleted_at: DateTime
@@ -16,20 +30,43 @@ The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://
 """
 scalar JSON
 
-"""
-A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
-"""
-scalar DateTime
+type Client {
+  id: ID!
+  name: String!
+  updated_at: DateTime
+  deleted_at: DateTime
+  created_at: DateTime
+}
+
+type ProductModel {
+  id: ID!
+  name: String!
+  attributes: [String!]!
+  client_id: Client!
+  updated_at: DateTime
+  deleted_at: DateTime
+  created_at: DateTime
+}
+
+type ProductStatus {
+  id: ID!
+  label: String!
+  color: String!
+  order: Float!
+  Allowed_to_publish: Boolean!
+  created_at: DateTime
+  updated_at: DateTime
+}
 
 type Product {
   id: ID!
   name: String!
-  brand: String!
-  model: String!
-  owner_id: String!
+  brand: Brand!
+  model: ProductModel!
+  owner_id: Client!
   fields: [ProductField!]!
   gtin: String!
-  product_statuses_id: String!
+  product_statuses_id: ProductStatus!
   created_at: DateTime
   deleted_at: DateTime
   updated_at: DateTime
@@ -39,7 +76,7 @@ type Brand {
   id: ID!
   name: String!
   description: String!
-  owner_id: String!
+  owner_id: Client!
   updated_at: DateTime
   deleted_at: DateTime
   created_at: DateTime

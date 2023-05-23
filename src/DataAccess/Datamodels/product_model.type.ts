@@ -1,6 +1,7 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import mongoose from 'mongoose';
+import { ClientType } from './client.type';
 
 @Schema()
 @ObjectType('ProductModel')
@@ -11,10 +12,10 @@ export class Product_modelType {
   @Field()
   @Prop()
   name: string;
-  @Field()
+  @Field(() => [String])
   @Prop()
   attributes: string[];
-  @Field()
+  @Field((type) => ClientType)
   @Prop()
   client_id: string;
   @Field({ nullable: true })
