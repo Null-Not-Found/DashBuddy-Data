@@ -1,6 +1,7 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 import { ProductType } from '../Types/product.type';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import mongoose from 'mongoose';
 
 @Schema()
 @ObjectType('Brand')
@@ -21,16 +22,16 @@ export class BrandType {
   @Prop()
   owner_id: string;
 
-  @Field()
-  @Prop()
+  @Field({ nullable: true })
+  @Prop({ nullable: true })
   updated_at: Date;
 
-  @Field()
-  @Prop()
+  @Field({ nullable: true })
+  @Prop({ nullable: true })
   deleted_at: Date;
 
-  @Field()
-  @Prop()
+  @Field({ nullable: true })
+  @Prop({ nullable: true })
   created_at: Date;
 
   @Field((type) => [ProductType])
@@ -40,3 +41,5 @@ export class BrandType {
 
 export type BrandDocument = BrandType & Document;
 export const BrandSchema = SchemaFactory.createForClass(BrandType);
+BrandSchema.set('versionKey', false);
+export const Brand = mongoose.model('Brand', BrandSchema);

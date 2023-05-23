@@ -1,5 +1,6 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import mongoose from 'mongoose';
 
 @Schema()
 @ObjectType('Attribute')
@@ -13,11 +14,11 @@ export class AttributeType {
   @Field()
   @Prop()
   required: boolean;
-  @Field()
-  @Prop()
+  @Field({ nullable: true })
+  @Prop({ nullable: true })
   updated_at: Date;
-  @Field()
-  @Prop()
+  @Field({ nullable: true })
+  @Prop({ nullable: true })
   deleted_at: Date;
   @Field()
   @Prop()
@@ -26,3 +27,5 @@ export class AttributeType {
 
 export type AttributeDocument = AttributeType & Document;
 export const AttributeSchema = SchemaFactory.createForClass(AttributeType);
+AttributeSchema.set('versionKey', false);
+export const Attribute = mongoose.model('Attribute', AttributeSchema);
