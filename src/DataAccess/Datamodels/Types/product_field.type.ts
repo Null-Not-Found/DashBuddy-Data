@@ -1,36 +1,7 @@
 import { Field, ID, ObjectType } from '@nestjs/graphql';
 import mongoose, { Document, Schema as MongooseSchema } from 'mongoose';
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
-//import { GraphQLScalarType, Kind } from 'graphql/index';
 import { GraphQLJSON } from 'graphql-type-json';
-
-/*const ValueScalar = new GraphQLScalarType({
-  name: 'ValueScalar',
-  description: 'Custom scalar type for the value field',
-  parseValue(value: any) {
-    // Parse the input value if needed
-    return value;
-  },
-  serialize(value: any) {
-    // Serialize the value if needed
-    return value;
-  },
-  parseLiteral(ast) {
-    if (ast.kind === Kind.STRING || ast.kind === Kind.INT) {
-      return ast.value;
-    }
-    return null;
-  },
-});
-
-@ObjectType('ProductFieldValue')
-export class ProductFieldValue {
-  @Field((type) => ValueScalar)
-  value: any;
-}
-@Field((type) => ProductFieldValue)
-@Prop({ type: MongooseSchema.Types.Mixed }) // Use Mongoose Mixed type to allow any value
-value: ProductFieldValue;*/
 
 @Schema()
 @ObjectType('ProductField')
