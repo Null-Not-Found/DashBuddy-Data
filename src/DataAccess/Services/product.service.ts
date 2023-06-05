@@ -20,12 +20,4 @@ export class ProductService {
   async deleteProduct(id: string): Promise<ProductType> {
     return this.productModel.findOneAndDelete({ id }).exec();
   }
-
-  async getManyProducts(productsIDs: string[]): Promise<ProductType[]> {
-    return this.productModel.find({
-      id: {
-        $in: productsIDs,
-      },
-    });
-  }
 }

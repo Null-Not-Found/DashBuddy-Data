@@ -2,6 +2,29 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Client {
+  id: ID!
+  name: String!
+  updated_at: DateTime
+  deleted_at: DateTime
+  created_at: DateTime
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Brand {
+  id: ID!
+  name: String!
+  description: String!
+  owner_id: Client!
+  updated_at: DateTime
+  deleted_at: DateTime
+  created_at: DateTime
+}
+
 type Attribute {
   id: ID!
   name: String!
@@ -10,11 +33,6 @@ type Attribute {
   deleted_at: DateTime
   created_at: DateTime!
 }
-
-"""
-A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
-"""
-scalar DateTime
 
 type ProductField {
   id: ID!
@@ -29,14 +47,6 @@ type ProductField {
 The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
 """
 scalar JSON
-
-type Client {
-  id: ID!
-  name: String!
-  updated_at: DateTime
-  deleted_at: DateTime
-  created_at: DateTime
-}
 
 type ProductModel {
   id: ID!
@@ -72,17 +82,6 @@ type Product {
   updated_at: DateTime
 }
 
-type Brand {
-  id: ID!
-  name: String!
-  description: String!
-  owner_id: Client!
-  updated_at: DateTime
-  deleted_at: DateTime
-  created_at: DateTime
-  products: [Product!]!
-}
-
 type Query {
   brand(id: String!): Brand!
   brands: [Brand!]!
@@ -91,12 +90,5 @@ type Query {
 }
 
 type Mutation {
-  deleteBrand(id: String!): Brand!
-  assingProductToBrand(assingProductToBrandInput: AssignProductToBrandInput!): Brand!
   deleteProduct(id: String!): Product!
-}
-
-input AssignProductToBrandInput {
-  brandID: ID!
-  productIDs: [ID!]!
 }

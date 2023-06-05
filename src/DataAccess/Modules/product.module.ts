@@ -9,13 +9,13 @@ import { Product_modelService } from '../Services/product_model.service';
 import { ClientService } from '../Services/client.service';
 import { Product_statusService } from '../Services/product_status.service';
 import { AttributeService } from '../Services/attribute.service';
-import { BrandModule } from './brand.module';
 import { BrandSchema } from '../Datamodels/brand.type';
 import { Product_modelSchema } from '../Datamodels/product_model.type';
 import { ClientSchema } from '../Datamodels/client.type';
 import { Product_statusSchema } from '../Datamodels/product_status.type';
 import { AttributeSchema } from '../Datamodels/attribute.type';
 import { Product_fieldsResolver } from '../Resolvers/product_fields.resolver';
+import { BrandResolver } from '../Resolvers/brand.resolver';
 
 @Module({
   imports: [
@@ -29,13 +29,13 @@ import { Product_fieldsResolver } from '../Resolvers/product_fields.resolver';
       { name: 'ProductStatus', schema: Product_statusSchema },
     ]),
     MongooseModule.forFeature([{ name: 'Attribute', schema: AttributeSchema }]),
-    forwardRef(() => BrandModule),
   ],
   providers: [
     ProductResolver,
     Product_fieldsResolver,
     ProductService,
     BrandService,
+    BrandResolver,
     Product_modelService,
     ClientService,
     Product_statusService,

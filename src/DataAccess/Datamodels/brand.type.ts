@@ -34,10 +34,6 @@ export class BrandType {
   @Field({ nullable: true })
   @Prop({ nullable: true })
   created_at: Date;
-
-  @Field((type) => [ProductType])
-  @Prop()
-  products: string[];
 }
 
 export type BrandDocument = BrandType & Document;
