@@ -10,7 +10,7 @@ import { ProductModel } from '../DataAccess/Datamodels/product_model.type';
 main();
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:4001/DashBuddy');
+  await mongoose.connect('mongodb://localhost:27017/data');
   //
   // CLIENTS-------------------------------------------------------------
   //

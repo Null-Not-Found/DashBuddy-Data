@@ -7,7 +7,7 @@ import { ProductModule } from './DataAccess/Modules/product.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:4001/DashBuddy'),
+    MongooseModule.forRoot('mongodb://localhost:27017/data'),
     BrandModule,
     ProductModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
