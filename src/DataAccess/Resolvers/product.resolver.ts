@@ -12,17 +12,13 @@ import { BrandService } from '../Services/brand.service';
 import { Product_modelService } from '../Services/product_model.service';
 import { ClientService } from '../Services/client.service';
 import { Product_statusService } from '../Services/product_status.service';
-import { forwardRef, Inject } from '@nestjs/common';
-import { Product_fieldType } from '../Datamodels/product_field.type';
 import { AttributeService } from '../Services/attribute.service';
-import { AttributeType } from '../Datamodels/attribute.type';
 
 @Resolver((of) => ProductType)
 export class ProductResolver {
   constructor(
     private productService: ProductService,
-    @Inject(forwardRef(() => BrandService))
-    private brandServise: BrandService,
+    private brandService: BrandService,
     private product_modelService: Product_modelService,
     private clientService: ClientService,
     private product_statusService: Product_statusService,
@@ -44,7 +40,7 @@ export class ProductResolver {
 
   @ResolveField()
   async brand(@Parent() product: ProductType) {
-    return this.brandServise.getBrand(product.brand);
+    return this.brandService.getBrand(product.brand);
   }
   @ResolveField()
   async model(@Parent() product: ProductType) {
