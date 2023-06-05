@@ -9,15 +9,15 @@ async function bootstrap() {
 }
 async function register() {
   fetch('http://127.0.0.1:3001/register', {
-	method: 'POST',
-	headers: {
-		'Content-Type': 'application/json'
-	  },
-	body: JSON.stringify({
-		"microservice": "data",
-		"port": "3500"
-	}),
-  })
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      microservice: 'data',
+      port: '3000',
+    }),
+  });
 }
 register();
 bootstrap();

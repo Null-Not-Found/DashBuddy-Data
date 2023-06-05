@@ -9,7 +9,7 @@ import { AppService } from "./app.service";
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:27017/data'),
+    MongooseModule.forRoot('mongodb://localhost:4001/DashBuddy'),
     BrandModule,
     ProductModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
