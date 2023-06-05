@@ -1,25 +1,27 @@
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-import { ProductDocument as Product } from '../Datamodels/product.type';
+import { ProductType } from '../Datamodels/product.type';
 
 @Injectable()
 export class ProductService {
-  constructor(@InjectModel('Product') private productModel: Model<Product>) {}
+  constructor(
+    @InjectModel('Product') private productModel: Model<ProductType>,
+  ) {}
 
-  async getProducts(): Promise<Product[]> {
+  async getProducts(): Promise<ProductType[]> {
     return this.productModel.find().exec();
   }
 
-  async getProduct(id: string): Promise<Product> {
+  async getProduct(id: string): Promise<ProductType> {
     return this.productModel.findOne({ id }).exec();
   }
 
-  async deleteProduct(id: string): Promise<Product> {
+  async deleteProduct(id: string): Promise<ProductType> {
     return this.productModel.findOneAndDelete({ id }).exec();
   }
 
-  async getManyProducts(productsIDs: string[]): Promise<Product[]> {
+  async getManyProducts(productsIDs: string[]): Promise<ProductType[]> {
     return this.productModel.find({
       id: {
         $in: productsIDs,

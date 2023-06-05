@@ -15,7 +15,7 @@ import { Product_modelSchema } from '../Datamodels/product_model.type';
 import { ClientSchema } from '../Datamodels/client.type';
 import { Product_statusSchema } from '../Datamodels/product_status.type';
 import { AttributeSchema } from '../Datamodels/attribute.type';
-import { Product_fieldsResolver } from "../Resolvers/product_fields.resolver";
+import { Product_fieldsResolver } from '../Resolvers/product_fields.resolver';
 
 @Module({
   imports: [

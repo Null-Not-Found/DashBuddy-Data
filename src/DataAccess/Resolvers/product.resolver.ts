@@ -13,9 +13,7 @@ import { Product_modelService } from '../Services/product_model.service';
 import { ClientService } from '../Services/client.service';
 import { Product_statusService } from '../Services/product_status.service';
 import { forwardRef, Inject } from '@nestjs/common';
-import { Product_fieldType } from '../Datamodels/product_field.type';
 import { AttributeService } from '../Services/attribute.service';
-import { AttributeType } from '../Datamodels/attribute.type';
 
 @Resolver((of) => ProductType)
 export class ProductResolver {

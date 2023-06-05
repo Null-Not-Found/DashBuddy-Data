@@ -4,7 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="" />
+    <list default="true" id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test/RootTestModule.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/product.resolver.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schema.gql" beforeDir="false" afterPath="$PROJECT_DIR$/schema.gql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Contollers/product.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Contollers/product.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/product.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/product.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Datamodels/product_field.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Datamodels/product_field.type.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Modules/brand.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Modules/brand.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Modules/product.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Modules/product.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Resolvers/product.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Resolvers/product.resolver.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/attribute.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/attribute.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/brand.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/brand.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/client.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/client.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/product.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/product_model.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/product_model.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/product_status.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/product_status.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeding/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeding/seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/jest-e2e.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/jest-e2e.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +55,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/pro10/Desktop/DashBuddy-Data/src/DataAccess/Datamodels/Inputs&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pro10/Desktop/DashBuddy-Data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -47,6 +68,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data" />
       <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Inputs" />
       <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Types" />
     </key>
@@ -90,6 +112,13 @@
       <workItem from="1684404143748" duration="15000" />
       <workItem from="1684746478655" duration="8700000" />
       <workItem from="1684838804236" duration="17928000" />
+      <workItem from="1684858013351" duration="133000" />
+      <workItem from="1684866612381" duration="326000" />
+      <workItem from="1685104615442" duration="1610000" />
+      <workItem from="1685433459370" duration="93000" />
+      <workItem from="1685443661393" duration="6049000" />
+      <workItem from="1685714943059" duration="17000" />
+      <workItem from="1685950598928" duration="397000" />
     </task>
     <servers />
   </component>
