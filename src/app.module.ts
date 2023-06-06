@@ -4,8 +4,8 @@ import { GraphQLModule } from '@nestjs/graphql';
 import { BrandModule } from './DataAccess/Modules/brand.module';
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ProductModule } from './DataAccess/Modules/product.module';
-import { AppController } from "./app.controller";
-import { AppService } from "./app.service";
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
 
 @Module({
   imports: [

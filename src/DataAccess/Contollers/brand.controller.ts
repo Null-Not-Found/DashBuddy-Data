@@ -1,18 +1,18 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { BrandType } from '../Datamodels/brand.type';
-import { BrandResolver } from "../Resolvers/brand.resolver";
+import { BrandService } from '../Services/brand.service';
 
 @Controller('brands')
 export class BrandsController {
-  constructor(private readonly brandResolver: BrandResolver) {}
+  constructor(public brandService: BrandService) {}
 
   @Get('get')
   async findAll(): Promise<BrandType[]> {
-    return this.brandResolver.brands();
+    return this.brandService.getBrands();
   }
 
   @Get('get/:id')
   async findOne(@Param('id') id: string): Promise<BrandType> {
-    return this.brandResolver.brand(id);
+    return this.brandService.getBrand(id);
   }
 }
