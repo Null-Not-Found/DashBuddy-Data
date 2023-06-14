@@ -6,11 +6,12 @@ import { Attribute } from '../DataAccess/Datamodels/attribute.type';
 import { ProductField } from '../DataAccess/Datamodels/product_field.type';
 import { ProductStatus } from '../DataAccess/Datamodels/product_status.type';
 import { ProductModel } from '../DataAccess/Datamodels/product_model.type';
+import 'dotenv/config';
 
 main();
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:4001/DashBuddy');
+  await mongoose.connect(process.env.DATABASE_URL);
   //
   // CLIENTS-------------------------------------------------------------
   //

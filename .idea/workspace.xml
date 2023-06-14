@@ -5,22 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/brand.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/brand.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/product.controller.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/product.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Contollers/brand.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Contollers/brand.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Contollers/product.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Contollers/product.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Resolvers/product.resolver.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Resolvers/product.resolver.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/product_model.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/product_model.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataAccess/Services/product_status.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataAccess/Services/product_status.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeding/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeding/seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/brand.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/brand.service.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +26,9 @@
         <option value="TypeScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,6 +46,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Tests&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/pro10/Desktop/DashBuddy-Data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -118,7 +114,13 @@
       <workItem from="1686037862330" duration="594000" />
       <workItem from="1686038597057" duration="6000" />
       <workItem from="1686041435350" duration="1075000" />
-      <workItem from="1686045199928" duration="3067000" />
+      <workItem from="1686045199928" duration="4372000" />
+      <workItem from="1686127011436" duration="1608000" />
+      <workItem from="1686136119616" duration="24000" />
+      <workItem from="1686137910418" duration="729000" />
+      <workItem from="1686566615903" duration="342000" />
+      <workItem from="1686750198540" duration="2078000" />
+      <workItem from="1686761845660" duration="130000" />
     </task>
     <servers />
   </component>
@@ -135,5 +137,17 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/brand.controller.spec.ts</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

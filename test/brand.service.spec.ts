@@ -3,7 +3,6 @@ import { getModelToken } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { BrandService } from '../src/DataAccess/Services/brand.service';
 import { BrandType } from '../src/DataAccess/Datamodels/brand.type';
-import { ProductType } from '../src/DataAccess/Datamodels/product.type';
 
 describe('ProductService', () => {
   let service: BrandService;

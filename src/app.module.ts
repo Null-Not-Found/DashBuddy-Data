@@ -6,10 +6,11 @@ import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { ProductModule } from './DataAccess/Modules/product.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import 'dotenv/config';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost:4001/DashBuddy'),
+    MongooseModule.forRoot(process.env.DATABASE_URL),
     BrandModule,
     ProductModule,
     GraphQLModule.forRoot<ApolloDriverConfig>({
