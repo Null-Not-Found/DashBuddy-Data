@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/seeding/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/seeding/seed.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/brand.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/brand.service.spec.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2OroK42dqxKtXwoHB5XSMM42g1H" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Tests&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pro10/Desktop/DashBuddy-Data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\pro10\\Desktop\\typescript-starter\\node_modules\\prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\pro10\\Desktop\\DashBuddy-Data\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Inputs" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels\Types" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Datamodels" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Modules" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Services" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Resolvers" />
+      <recent name="C:\Users\pro10\Desktop\DashBuddy-Data\src\DataAccess\Contollers" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc0f80de-9aaa-4da4-a175-adb055c7c1af" name="Changes" comment="" />
+      <created>1682327994505</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1682327994505</updated>
+      <workItem from="1682327995547" duration="96000" />
+      <workItem from="1682328103812" duration="641000" />
+      <workItem from="1682328762077" duration="671000" />
+      <workItem from="1682413042780" duration="647000" />
+      <workItem from="1682422152655" duration="58000" />
+      <workItem from="1682452473208" duration="14000" />
+      <workItem from="1683038456645" duration="23000" />
+      <workItem from="1683038497262" duration="28000" />
+      <workItem from="1683622201330" duration="292000" />
+      <workItem from="1683622505385" duration="2585000" />
+      <workItem from="1683625189367" duration="705000" />
+      <workItem from="1683628299566" duration="796000" />
+      <workItem from="1684141547479" duration="187000" />
+      <workItem from="1684141752621" duration="370000" />
+      <workItem from="1684161618251" duration="17195000" />
+      <workItem from="1684222728218" duration="2568000" />
+      <workItem from="1684228990281" duration="1635000" />
+      <workItem from="1684233370977" duration="2223000" />
+      <workItem from="1684236741272" duration="812000" />
+      <workItem from="1684238343499" duration="252000" />
+      <workItem from="1684239594327" duration="1110000" />
+      <workItem from="1684404143748" duration="15000" />
+      <workItem from="1684746478655" duration="8700000" />
+      <workItem from="1684838804236" duration="17928000" />
+      <workItem from="1684858013351" duration="133000" />
+      <workItem from="1684866612381" duration="326000" />
+      <workItem from="1685104615442" duration="1610000" />
+      <workItem from="1685433459370" duration="93000" />
+      <workItem from="1685443661393" duration="6049000" />
+      <workItem from="1685714943059" duration="17000" />
+      <workItem from="1685950598928" duration="13530000" />
+      <workItem from="1686037862330" duration="594000" />
+      <workItem from="1686038597057" duration="6000" />
+      <workItem from="1686041435350" duration="1075000" />
+      <workItem from="1686045199928" duration="4372000" />
+      <workItem from="1686127011436" duration="1608000" />
+      <workItem from="1686136119616" duration="24000" />
+      <workItem from="1686137910418" duration="729000" />
+      <workItem from="1686566615903" duration="342000" />
+      <workItem from="1686750198540" duration="2078000" />
+      <workItem from="1686761845660" duration="130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/brand.controller.spec.ts</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
